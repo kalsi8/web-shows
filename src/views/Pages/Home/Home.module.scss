@@ -1,0 +1,15 @@
+@import '../../../common/common.scss';
+
+.container{
+    .header{
+        padding: 20px;
+        background: $Blue;
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+    }
+    .page{
+        padding-top: 110px;
+    }
+}

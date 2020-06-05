@@ -1,0 +1,35 @@
+@import '../../../../../common/common.scss';
+
+.searchContainer{
+    display: flex;
+    border: solid 1px $BorderBlue;
+    border-radius: 10px;
+    background: $Grey;
+    align-items: center;
+    .searchButton{
+        color: $White;
+        width: 40px;
+        text-align: center;
+        &:hover{
+            opacity: .4;
+        }
+    }
+    .searchInput{
+        border: none;
+        border-right: solid 1px $BorderBlue;
+        margin: 3px;
+        font-size: 1rem;
+        padding: 1rem;
+        color: $White;
+        flex: 1;
+        background: transparent;
+        &:focus{
+            outline: none;
+        }
+        &::-webkit-input-placeholder {
+            color: $White;
+            opacity: .7;
+        }
+        
+    }
+}

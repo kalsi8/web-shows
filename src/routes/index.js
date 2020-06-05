@@ -1,10 +1,11 @@
-import Home from "../views/Pages/Home";
+import Home from '../views/Pages/Home'
 
 export default [
-    {
-        path: '/:showName',
-        component: Home,
-        name: 'Home',
-        id: 'home_page'
-    }
+  {
+    path: '/:showName?',
+    component: Home,
+    name: 'Home',
+    id: 'home_page',
+    exact: false
+  }
 ]

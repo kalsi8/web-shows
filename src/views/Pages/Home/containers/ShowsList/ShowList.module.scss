@@ -1,0 +1,22 @@
+.list{
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1170px;
+    margin-bottom: 60px;
+    @media only screen and (max-width: 1000px){
+        padding: 0 15px;
+    }
+
+    @media only screen and (max-width: 768px){
+        padding: 0 22px;
+        max-width: 100%;
+    }
+    
+}
+
+.loadMore{
+    color: white;
+    text-align: center;
+}
