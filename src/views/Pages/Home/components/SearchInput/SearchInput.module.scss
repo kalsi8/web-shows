@@ -10,8 +10,18 @@
         color: $White;
         width: 40px;
         text-align: center;
+        color: #ffffff;
+        width: 40px;
+        text-align: center;
+        background: transparent;
+        border: none;
+        height: 50px;
         &:hover{
             opacity: .4;
+        }
+        &:focus{
+            outline: none
+            // can do this in reset also
         }
     }
     .searchInput{
@@ -29,6 +39,8 @@
         &::-webkit-input-placeholder {
             color: $White;
             opacity: .7;
+                        // can do this in reset also
+
         }
         
     }

@@ -10,18 +10,18 @@ export default function SearchInput ({
   const [searchValue, setSearchValue] = useState(initialValue)
 
   return (
-    <div className = {s.searchContainer}>
+    <form className = {s.searchContainer} onSubmit = {(e) => { e.preventDefault(); onClick(searchValue) }}>
       <input
         className = {s.searchInput}
         value = {searchValue}
         placeholder= {'Enter a search value'}
         onChange = {(e) => { setSearchValue(e.target.value); onChange(e.target.value) }} />
-      <div
-        onClick = {() => onClick(searchValue)}
+      <button
+        type="submit"
         className = {s.searchButton}>
         Go
-      </div>
-    </div>
+      </button>
+    </form>
   )
 }
 
